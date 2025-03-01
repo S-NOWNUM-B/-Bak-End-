@@ -1,68 +1,71 @@
-Выполненные задания по курсу Backend
+**Выполненные задания по курсу Backend**
 
-Здесь будут храниться все задания, выполненные в рамках прохождения курса по Backend-разработке.
+Данный репозиторий содержит выполненные задания в рамках курса по Backend-разработке.
 
-Установка и настройка проекта
+**1. Установка и настройка проекта**
 
-Клонирование репозитория
-Открываем терминал и выполняем команду:
+**1.1 Клонирование репозитория**
+	1.	Открываем терминал и выполняем команду:
 git clone https://github.com/S-NOWNUM-B/-Bak-End-
-
-Затем переходим в папку проекта:
-
+	2.	Затем переходим в папку проекта:
 cd -Bak-End-
 
-Создание виртуального окружения (рекомендуется)
+**1.2 Создание виртуального окружения (рекомендуется)**
+	3.	Создаем виртуальное окружение:
 python -m venv venv
-
-Активируем окружение:
-Windows:
-
-venv\Scripts\activate Mac/Linux:
-
+	4.	Активация окружения:
+	•	Windows:
+venv\Scripts\activate
+	•	Mac/Linux:
 source venv/bin/activate
 
-Установка зависимостей
+**1.3 Установка зависимостей**
+	5.	Устанавливаем зависимости:
 pip install -r requirements.txt
 
-Настройка базы данных и запуск миграций
-python manage.py makemigrations python manage.py migrate
-
-Создание суперпользователя (для входа в админ-панель)
-python manage.py createsuperuser
-
-Заполняем поля (логин, email, пароль).
-
-Запуск сервера
-python manage.py runserver
-
-После этого сервер будет доступен по адресу http://127.0.0.1:8000/.
-
-Полезные команды Django
-
-Создать новое приложение в Django
-python manage.py startapp <app_name>
-
-Очистить базу данных и заново применить миграции
-python manage.py flush python manage.py migrate
-
-Создать новую миграцию (если изменились модели)
+**1.4 Настройка базы данных и запуск миграций**
+	6.	Создаем миграции:
 python manage.py makemigrations
+	7.	Применяем миграции:
+python manage.py migrate
 
-Просмотреть список доступных команд Django
-python manage.py help
+**1.5 Создание суперпользователя (для входа в админ-панель)**
+	8.	Выполняем команду:
+python manage.py createsuperuser
+	9.	Заполняем поля (логин, email, пароль).
 
-Запустить интерактивную консоль Django
-python manage.py shell
+**1.6 Запуск сервера**
+	10.	Запускаем сервер:
+python manage.py runserver
+	11.	После этого сервер будет доступен по адресу:
+http://127.0.0.1:8000/
 
-Собрать статические файлы (если используется STATICFILES_DIRS)
-python manage.py collectstatic
+**2. Полезные команды Django**
 
-Тестирование приложения
-python manage.py test
+**2.1 Создать новое приложение в Django**
+	12.	python manage.py startapp <app_name>
 
-Создать дамп базы данных (бэкап)
-python manage.py dumpdata > backup.json
+**2.2 Очистить базу данных и заново применить миграции**
+	13.	python manage.py flush
+	14.	python manage.py migrate
 
-Загрузить дамп базы данных
-python manage.py loaddata backup.json
+**2.3 Создать новую миграцию (если изменились модели)**
+	15.	python manage.py makemigrations
+
+**2.4 Просмотреть список доступных команд Django**
+	16.	python manage.py help
+
+**2.5 Запустить интерактивную консоль Django**
+	17.	python manage.py shell
+
+**2.6 Собрать статические файлы (если используется STATICFILES_DIRS)**
+	18.	python manage.py collectstatic
+
+**2.7 Тестирование приложения**
+	19.	python manage.py test
+
+**2.8 Создать дамп базы данных (бэкап)**
+	20.	python manage.py dumpdata > backup.json
+
+**2.9 Загрузить дамп базы данных**
+	21.	python manage.py loaddata backup.json
